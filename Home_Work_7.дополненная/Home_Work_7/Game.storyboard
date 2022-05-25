@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller1-->
+        <scene sceneID="5kO-lw-ZBV">
+            <objects>
+                <viewController storyboardIdentifier="ViewController1" id="IVb-PF-E46" customClass="ViewController1" customModule="Home_Work_7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sGf-Je-Bdf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdt-Qv-gik">
+                                <rect key="frame" x="10" y="144" width="394" height="62"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Гонка">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Button1" destination="IVb-PF-E46" eventType="touchUpInside" id="u0o-Ul-3ax"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Onp-RD-2L4">
+                                <rect key="frame" x="10" y="306" width="394" height="62"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Результат">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Button2" destination="IVb-PF-E46" eventType="touchUpInside" id="NP7-pY-aWl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="li3-n2-QOi">
+                                <rect key="frame" x="10" y="468" width="394" height="62"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Настройки">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Button3" destination="IVb-PF-E46" eventType="touchUpInside" id="aaG-wF-rHZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wvm-Nn-LXo"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="wvm-Nn-LXo" firstAttribute="trailing" secondItem="Zdt-Qv-gik" secondAttribute="trailing" constant="10" id="5Bp-gb-2nW"/>
+                            <constraint firstItem="Zdt-Qv-gik" firstAttribute="leading" secondItem="wvm-Nn-LXo" secondAttribute="leading" constant="10" id="6zv-5W-0Xf"/>
+                            <constraint firstItem="Onp-RD-2L4" firstAttribute="top" secondItem="Zdt-Qv-gik" secondAttribute="bottom" constant="100" id="GCN-ct-ClW"/>
+                            <constraint firstItem="wvm-Nn-LXo" firstAttribute="trailing" secondItem="Onp-RD-2L4" secondAttribute="trailing" constant="10" id="UF0-0H-zfe"/>
+                            <constraint firstItem="Zdt-Qv-gik" firstAttribute="top" secondItem="wvm-Nn-LXo" secondAttribute="top" constant="100" id="Xrc-u6-zQD"/>
+                            <constraint firstItem="wvm-Nn-LXo" firstAttribute="trailing" secondItem="li3-n2-QOi" secondAttribute="trailing" constant="10" id="Yeo-Nt-QK6"/>
+                            <constraint firstItem="Onp-RD-2L4" firstAttribute="leading" secondItem="wvm-Nn-LXo" secondAttribute="leading" constant="10" id="c7f-RR-TEr"/>
+                            <constraint firstItem="li3-n2-QOi" firstAttribute="top" secondItem="Onp-RD-2L4" secondAttribute="bottom" constant="100" id="cgZ-en-S50"/>
+                            <constraint firstItem="li3-n2-QOi" firstAttribute="leading" secondItem="wvm-Nn-LXo" secondAttribute="leading" constant="10" id="wye-gx-JDa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ButtonFirst" destination="Zdt-Qv-gik" id="WbU-Zh-a02"/>
+                        <outlet property="ButtonSecond" destination="Onp-RD-2L4" id="TmJ-0z-Di1"/>
+                        <outlet property="ButtonThird" destination="li3-n2-QOi" id="0BK-Oz-PcS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ose-cW-55O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="-27"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="wF3-Yx-q7I">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2" id="TQ7-cp-sNP" customClass="ViewController2" customModule="Home_Work_7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eG3-LT-BDO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="U0d-bW-gpZ"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aBa-xH-Fmr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997" y="-27"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="hlN-lS-W87">
+            <objects>
+                <viewController storyboardIdentifier="ViewController3" id="Ekd-6S-PfI" customClass="ViewController3" customModule="Home_Work_7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1nn-O9-KXX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gNi-Vo-l1K"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EZF-YD-Azm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1745" y="-27"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="Xjf-vU-eyf">
+            <objects>
+                <viewController storyboardIdentifier="ViewController4" id="Bw6-fv-gQC" customClass="ViewController4" customModule="Home_Work_7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c8g-Yn-jTz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gY5-l7-SQ2"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVk-ZS-Tkc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2499" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
